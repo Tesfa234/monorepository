@@ -1,6 +1,32 @@
-node_modules/
-dist/
-build/
-.turbo/
+# .gitignore
+
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build outputs
+dist
+.next
+out
+build
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
 *.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS metadata
 .DS_Store
+Thumbs.db
+
+# IDE
+.vscode
+.idea
+
+# Turbo
+.turbo

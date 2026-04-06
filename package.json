@@ -1,16 +1,17 @@
 {
-  "name": "monorepo",
+  "name": "fyp-monorepo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.33.0",
   "devDependencies": {
-    "turbo": "^2.9.4"
-  }
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.15.0"
 }
